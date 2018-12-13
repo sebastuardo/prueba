@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @offer.name %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @offer.company.name %>
+</p>
+<p>
+  <strong>User:</strong>
+  <% @offer.users.each do |user| %>
+  <%= user.name %>
+  <%= user.email %>
+  <%= user.phone %>
+  <% end %>
+</p>
